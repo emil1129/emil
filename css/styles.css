@@ -368,3 +368,17 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-right: 20px;
+  margin-top: 1rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
