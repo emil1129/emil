@@ -296,7 +296,7 @@ a {
   color: #fff;
 }
 
-.card--primary .badge--small {
+.card--primary .badge--secondary {
   background: #126de4;
 }
 
@@ -305,7 +305,7 @@ a {
   color: #fff;
 }
 
-.card--secondary .badge--small {
+.card--secondary .badge--secondary {
   background: #01cdf0;
 }
 
@@ -336,6 +336,19 @@ a {
 
 .plan .list__item {
   letter-spacing: 1px;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::after {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -6px;
+  width: 40px;
 }
 
 @media screen and (min-width: 1024px) {
