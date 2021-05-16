@@ -6,6 +6,8 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -240,12 +242,28 @@ a {
 
 /* Inputs */
 .input {
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   color: var(--color-heading);
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 2rem;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  width: 0;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 ::placeholder {
