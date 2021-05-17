@@ -38,6 +38,7 @@ h3 {
 
 h1 {
   font-size: 6rem;
+  line-height: 1.1;
 }
 
 h2 {
@@ -672,5 +673,37 @@ a {
   .nav__item {
     border: 0;
     font-size: 1.6rem;
+  }
+}
+
+/* Hero */
+.hero__heading {
+  color: #fff;
+  margin-top: 0;
+}
+
+.hero__header {
+  text-align: center;
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__header {
+    text-align: left;
+    align-self: center;
   }
 }
