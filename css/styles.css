@@ -34,11 +34,11 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
   font-size: 6rem;
-  line-height: 1.1;
 }
 
 h2 {
@@ -201,10 +201,17 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 4rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 25px;
 }
 
 .btn--primary {
@@ -705,5 +712,31 @@ a {
   .hero__header {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  border: 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.block-domain__prices {
+  color: var(--color-heading);
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
