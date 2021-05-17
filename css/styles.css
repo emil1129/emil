@@ -47,7 +47,7 @@ h2 {
 
 h3 {
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
@@ -266,6 +266,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3vw;
   }
 }
 
@@ -532,6 +533,7 @@ a {
 .callout {
   border-radius: 5px;
   padding: 3rem;
+  transform: translateY(50px);
 }
 
 .callout--primary {
@@ -677,7 +679,7 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(5px);
+  transform: translateY(5px) translateX(-20px);
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -829,6 +831,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  margin-top: 2rem;
 }
 
 .footer .collapsible__heading {
@@ -840,7 +843,7 @@ a {
 
 .footer__section {
   border-bottom: 1px solid #393939;
-  padding: 2rem 0.5rem;
+  padding: 2rem;
 }
 
 .footer__brand {
@@ -896,11 +899,11 @@ a {
   }
 
   .footer .collapsible__heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .footer__item {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .footer__copyright {
@@ -911,6 +914,5 @@ a {
   .footer__brand {
     order: -1;
     margin-top: 1rem;
-    margin-right: 2rem;
   }
 }
